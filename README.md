@@ -1,12 +1,11 @@
 # Linux-Server-Config
 
+
 - Project 7 under the Full Stack Web Developer Nanodegree at Udacity
 
-See project live at: [http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/](http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/)
 
-* public Ip: `35.154.228.73`
+* public Ip: `13.126.216.37`
 * SSH PORT: `2200`
-* Full project URL: [http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/](http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/)
 
 
 ### Tasks given and method for completion:
@@ -20,7 +19,7 @@ See project live at: [http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/
     * Download private key
     * Move the private key file into the folder ~/.ssh (where ~ is your environment's home directory). So if you downloaded the file to the Downloads folder, just execute the following command in your terminal. `mv ~/Downloads/udacity_key.rsa ~/.ssh/`
     * Open your terminal and type in `chmod 600 ~/.ssh/udacity_key.rsa`
-    * In your terminal, type in `ssh -i ~/.ssh/udacity_key.rsa root@35.160.19.49`
+    * In your terminal, type in `ssh -i ~/.ssh/udacity_key.rsa root@13.126.216.37`
 
 
 * Create a new user named grader
@@ -127,8 +126,8 @@ See project live at: [http://ec2-35-154-228-73.ap-south-1.compute.amazonaws.com/
 
     ```
     <VirtualHost *:80>
-      ServerName 35.160.19.49
-      ServerAdmin admin@35.160.19.49
+      ServerName 13.126.216.37
+      ServerAdmin admin@13.126.216.37
       WSGIScriptAlias / /var/www/catalog/catalog.wsgi
       <Directory /var/www/catalog/catalog/>
           Order allow,deny
